@@ -1,11 +1,15 @@
 /* GLOBAL */
-@import "./global/variables.scss";
+@import "./global/mixins.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/common.scss";
+@import "./global/variables.scss";
+
+
 
 /* BLOCKS */
 @import "./blocks/page.scss";
-@import "./blocks/page__body.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-container.scss";
@@ -18,7 +22,4 @@
 @import "./blocks/product-card.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/program.scss";
-@import "./blocks/header.scss";
-@import "./blocks/header.scss";
-@import "./blocks/header.scss";
-@import "./blocks/header.scss";
+;
