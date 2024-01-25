@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="source/styles/styles.scss" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Form</title>
   </head>
   <body class="page__body">
@@ -13,20 +13,20 @@
 
       <nav class="main-nav">
         <button class="main-nav__toggle button-burger">
-          <span class="visually=hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html" class="site-list__link site-list__link--active" aria-current="page">
+        <ul class="main-nav__list ">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link main-nav__link--active" aria-current="page">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link"> Каталог продукции </a>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link"> Каталог продукции </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html" class="site-list__link"> Подбор программы </a>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link"> Подбор программы </a>
           </li>
         </ul>
       </nav>
@@ -34,18 +34,18 @@
 
     <main class="main-container">
       <section class="program">
-        <div class="program__container">
-          <h1 class="program__title">Подбор программы</h1>
-          <p class="program__description">
+        <div class="program__wrapper container">
+          <h1 class="program__title title-h1">Подбор программы</h1>
+          <p class="program__text basic-text">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
           <form class="program__form form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="form__group form__group--base-info">
-              <legend class="visually-hidden">Информация о коте</legend>
+              <legend class="visually-hidden">Информация о коте.</legend>
               <div class="form__group-wrapper">
-                <label class="form__label" for="form-cat-name">Имя:*</label>
+                <label class="form__label form-text" for="form-cat-name">Имя:*</label>
                 <input
-                  class="form__input input"
+                  class="form__input input form-text"
                   type="text"
                   id="form-cat-name"
                   name="form-name"
@@ -55,9 +55,9 @@
                 />
               </div>
               <div class="form__group-wrapper">
-                <label class="form__label" for="form-cat-weight">Вес(кг):*</label>
+                <label class="form__label form-text" for="form-cat-weight">Вес(кг):*</label>
                 <input
-                  class="form__input input input--numeric"
+                  class="form__input input input--numeric form-text"
                   type="number"
                   id="form-cat-weight"
                   name="form-weight"
@@ -67,9 +67,9 @@
                 />
               </div>
               <div class="form__group-wrapper">
-                <label class="form__label" for="form-cat-age">Возраст (лет):</label>
+                <label class="form__label form-text" for="form-cat-age">Возраст (лет):</label>
                 <input
-                  class="form__input input input--numeric"
+                  class="form__input input input--numeric form-text"
                   type="number"
                   id="form-cat-age"
                   name="form-age"
@@ -80,7 +80,7 @@
               </div>
             </fieldset>
             <fieldset class="form__group form__group--select-program">
-              <legend class="visually-hidden">Тип программы</legend>
+              <legend class="visually-hidden">Тип программы.</legend>
 
               <ul class="form__group-list">
                 <li class="form__group-item">
@@ -92,7 +92,7 @@
                       value="weight-loss"
                       checked
                     />
-                    <span class="form__control-label">Похудение</span>
+                    <span class="form__control-label form-text">Похудение</span>
                   </label>
                 </li>
                 <li class="form__group-item">
@@ -104,7 +104,7 @@
                       value="weight-gain"
                       checked
                     />
-                    <span class="form__control-label">Набор массы</span>
+                    <span class="form__control-label form-text">Набор массы</span>
                   </label>
                 </li>
                 <li class="form__group-item">
@@ -116,7 +116,7 @@
                       value="dont-know"
                       checked
                     />
-                    <span class="form__control-label">Не знаю (Нужен ваш совет)</span>
+                    <span class="form__control-label form-text">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
@@ -125,8 +125,8 @@
             <fieldset class="form__group form__group--info-owner">
               <legend class="form__title">Контактные данные (владельца кота)</legend>
 
-              <div class="form__group-wrapper">
-                <label class="form__label" for="form-owner-email">E-mail:*</label>
+              <div class="form__group__wrapper container">
+                <label class="form__label form-text" for="form-owner-email">E-mail:*</label>
                 <input
                   class="form__input input"
                   type="email"
@@ -139,8 +139,8 @@
                 />
                 <span class="form__input-icon form__input-icon--email"></span>
               </div>
-              <div class="form__group-wrapper">
-                <label class="form__label" for="form-owner-phone">Телефон:*</label>
+              <div class="form__group__wrapper container">
+                <label class="form__label form-text" for="form-owner-phone">Телефон:*</label>
                 <input
                   class="form__input input"
                   type="phone"
@@ -157,9 +157,8 @@
 
             <fieldset class="form__group form__group--comments">
               <legend class="form__title">Комментарий</legend>
-              <span class="visually-hidden">Дополнительная информация о коте</span>
               <textarea
-                class="form__textarea input"
+                class="form__textarea input form-text"
                 rows="6"
                 id="form-comments"
                 name="form-comments"
@@ -173,32 +172,32 @@
               <ul class="form__group-list">
                 <li class="form__group-item">
                   <input type="checkbox" class="form-control-input" name="sweetener" checked />
-                  <span class="form-control-label">Сахарозаменитель</span>
+                  <span class="form-control-label form-text">Сахарозаменитель</span>
                 </li>
                 <li class="form__group-item">
                   <input type="checkbox" class="form-control-input" name="water" />
-                  <span class="form-control-label">Питьевая вода</span>
+                  <span class="form-control-label form-text">Питьевая вода</span>
                 </li>
                 <li class="form__group-item">
                   <input type="checkbox" class="form-control-input" name="milk" />
-                  <span class="form-control-label">Молоко</span>
+                  <span class="form-control-label form-text">Молоко</span>
                 </li>
                 <li class="form__group-item">
                   <input type="checkbox" class="form-control-input" name="vitamins" />
-                  <span class="form-control-label">Витамины</span>
+                  <span class="form-control-label form-text">Витамины</span>
                 </li>
               </ul>
             </fieldset>
             <div class="form__group form__group--button">
               <button class="form__button button" type="submit">Отправить заявку</button>
-              <p class="form__required">* — Обязательные поля</p>
+              <p class="form__required basic-text">* — Обязательные поля</p>
             </div>
           </form>
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts-wrapper">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <div class="contacts__wrapper container">
+          <h2 class="contacts__title title-h2">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
 
           <img src="#" alt="Карта города" class="contacts__map" />
@@ -206,16 +205,16 @@
       </section>
 
       <footer class="main-footer">
-        <div class="main-footer__wrapper">
-          <a href="" class="main-footer__logo logo">
-            <img src="#" alt="Кэт энерджи" class="logo__image logo__image--text" />
+        <div class="main-footer__wrapper container">
+          <a href="./index.html" class="main-footer__logo logo">
+            <img src="" alt="Кэт энерджи" class="logo__image logo__image--text" />
           </a>
 
           <section class="page__footer--socials socials">
-            <h2 class="socials__title">Мы в соц сетях</h2>
+            <h2 class="socials__title title-h2">Мы в соц сетях</h2>
             <ul class="socials__list">
               <li class="socials__item">
-                <a shref="" class="socials__link socials__link--vk"></a
+                <a href="" class="socials__link socials__link--vk"></a
                 ><span class="visually-hidden">Vk</span>
               </li>
               <li class="socials__item">

@@ -2,7 +2,7 @@
 @import "./global/mixins.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
-@import "./global/visually-hidden.scss";
+@import "../images/catalog/visually-hidden";
 @import "./global/common.scss";
 @import "./global/variables.scss";
 
@@ -12,6 +12,8 @@
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/intro.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/nutrition.scss";
 @import "./blocks/advantages.scss";
@@ -22,4 +24,3 @@
 @import "./blocks/product-card.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/program.scss";
-;
