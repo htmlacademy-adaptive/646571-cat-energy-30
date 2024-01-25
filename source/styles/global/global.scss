@@ -1,5 +1,16 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
 
-.visually-hidden {
-  display: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+body {
+  font-size: 14px;
+  line-height: 18px;
+  //color: $secondary-text-color;
+  background-color: bisque;
+}
+
+
+

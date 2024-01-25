@@ -1,0 +1,30 @@
+.title-h1 {
+  @include font-select($primary-font, 36px, 36px,$secondary-text-color)
+}
+
+.title-h2 {
+  @include font-select($primary-font, 36px, 40px, $secondary-text-color)
+}
+
+.title-h3 {
+  @include  font-select($primary-font, 16px, 20px, $secondary-text-color)
+}
+
+
+.basic-text {
+  @include font-select($secondary-font, 14px, 18px, $primary-text-color)
+}
+
+.form-text {
+  @include font-select($primary-font, 16px, 18px, $primary-text-color);
+  text-transform: uppercase;
+}
+
+.form__title {
+  @include  font-select($primary-font, 24px, 26px, $secondary-text-color)
+}
+
+.card-text {
+  @include font-select($secondary-font, 12px, 16px, $primary-text-color)
+}
+
